@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>@yield('title', 'LaraBBS-v57')</title>
+        <meta name="csrf-token" value="{{ csrf_token() }}">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     </head>
     <body>
@@ -14,5 +15,8 @@
             @include('layouts._footer')
         </div>
     </div>
+
+    <script src="{{ mix('js/app.js') }}"></script>
+
     </body>
 </html>
